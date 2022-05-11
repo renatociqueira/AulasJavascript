@@ -1,0 +1,20 @@
+Resultado de operadores relacionais é booleano
+
+--------------------------------------------
+|5 > 2  true  | Maior                      |
+|7 < 4 false  | Menor                      |
+|8 >= 8 true  | Maior ou Igual             |
+|9 <= 7 false | Menor ou igual             |
+|5 == 5 true  | Igual                      |
+|4 != 4 false | Não igual no caso diferente|
+--------------------------------------------
+
+Operador relacional de identidade ===
+
+-----------------------------------------------------------
+|5 == 5 true     | igualdade                              |
+|5 == '5' true   | igualdade                              |
+|5 === '5' false | identidade ou seja o valor é identico? |
+|5 === 5 true    | identidade ou seja o valor é identico? |
+|5 !== '5' true  | Desigual restrito                      | 
+-----------------------------------------------------------

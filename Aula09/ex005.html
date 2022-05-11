@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(149, 163, 180);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudos com DOM</h1>
+    <p>Aqui vai o Resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascript.</p>
+    <div id="msg" >Clique em mim</div>
+    <div name="msg1" >Clique em mim 1</div>
+    <script>
+        var p = window.document.getElementsByTagName('p')[0];
+        // window.document.write('Escrevendo na pagina, não é a melhor maneira ;)');
+        // window.document.write(window.document.charset);
+        // window.document.write(window.document.URL);
+        p.style.color = 'orange'
+        var p1 = window.document.getElementsByTagName('p')[1]
+        p1.style.color = 'black'
+        // sem formatação
+        // window.document.write('Pegando texto do paragrafo: ' + p1.innerText);
+        // com formatação
+        window.document.write('Pegando texto do paragrafo: ' + p1.innerHTML);
+
+        // var corpo = window.document.body
+        // corpo.style.background = 'red'
+
+        // window.alert(p1.innerText);
+
+        // var d = window.document.getElementById('msg');
+        // d.style.background = 'green';
+        // d.innerText = 'Estou aguardando...'
+        // window.document.getElementById('msg').innerText = 'Estou aguardando...'
+
+        var d1 = window.document.getElementsByName('msg1')[0]
+        d1.innerText = 'Teste 2';
+
+        // selecionando por id #
+        var d = window.document.querySelector('div#msg')
+        // Selecionando por classe .
+        // var d = window.document.querySelector('div.msg')
+        d.style.color = 'blue'
+
+
+    </script>
+</body>
+</html>

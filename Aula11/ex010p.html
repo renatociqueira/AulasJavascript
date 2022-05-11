@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema Nacionalidade</h1>
+    Digite em qual pais nasceu: <input type="text" name="txtn" id="txtn">
+    <input type="button" value="verificar" onclick="nacionalidade()">
+    <div id="res">
+
+    </div>
+    <script>
+        
+        function nacionalidade(){
+            var pais = window.document.getElementById('txtn').value
+            var res = window.document.getElementById('res')
+            // var pais2 = pais.value
+
+            res.innerHTML += `<p>meu pais é ${pais}</p>`
+            if ( pais == 'brasil'){
+                res.innerHTML += `Seu pais é ${pais} então você é nativo`
+            } else {
+                res.innerHTML += `Você é um estrangeiro ${pais}`
+            }
+
+        }
+    </script>
+</body>
+</html>

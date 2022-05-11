@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto curso em video</title>
+    <style>
+        body {
+            background-color: #5d5dc9;
+            color: white;
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição!!</p>
+    <script>
+
+       var n1 = Number.parseFloat(window.prompt('Digite outro numero: ')) // windows prompt trata os valores como string
+       var n2 = Number.parseFloat(window.prompt('Digite outro numero: '))
+       var s = n1 + n2
+       window.alert(' A soma dos valores é ' + s) // Concatenação
+       window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Template string
+
+       /*
+       var n1 = Number.parseInt(window.prompt('Digite um numero: ')) 
+       var n2 = Number.parseInt(window.prompt('Digite outro numero: '))
+       var n1 = Number(window.prompt('Digite um numero: ')) 
+       var n2 = Number(window.prompt('Digite outro numero: '))
+       */
+      
+       // number + number para adição
+       // string + string para concatenação
+       // Number.parseInt(n) numeros inteiros
+       // Number.parseFloat(n) numeros com virgula
+       // Number(n) , trata os valores tanto em inteiro como com virgula
+       // converter valor em string - String(n)
+       // converter valor em string - n.toString()
+       // 'Texto de exemplo' + s (usa concatenação) exemplo: 'O aluno ' + nome + ' com idade ' + idade + ' tirou nota '+ nota
+       // `Texto de exemplo ${s}` (usa template string) exemplo: ` O aluno ${nome} com idade ${idade} anos tirou nota ${nota}`
+       // Tamanho da string exemplo: nome.length
+       // Letras em Maiusculas exemplo: nome.toUpperCase()
+       // Letras em Minusculas exemplo: nome.toLowerCase()
+    </script>
+</body>
+</html>

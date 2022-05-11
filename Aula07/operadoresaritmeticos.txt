@@ -1,0 +1,33 @@
+-------------------------------
+|5 + 2 = 7   |soma            |
+|5 - 2 = 3   |subtração       |
+|5 * 2 = 10  |multiplicação   | 
+|5 / 2 = 2.5 |divisão         |
+|5 % 2 = 1   |resto da divisão|
+|5 ** 2 = 25 |potência        |
+-------------------------------
+5 + 3 / 2 = 6.5
+(5+3)/2 = 4
+
+Ordem de precedencia dos operadores aritmeticos
+1- ()
+2- **
+3- * / %
+4- + -
+
+Exemplo de ordem de precedencia
+
+---------------------------------------
+|var a = 5 + 3         | Resultado 8  |
+|var b = a % 5         | Resultado 3  |   
+|var c = 5 * b ** 2    | Resultado 45 |
+|var d = 10 - a / 2    | Resultado 6  |
+|var e = 6 * 2 / d     | Resultado 2  |
+|var f = b % e + 4 / e | Resultado 3  |
+---------------------------------------
+
+Auto incremento
+n++
+n--
+++n
+--n

@@ -1,0 +1,7 @@
+operador ternario
+? 
+:
+
+Exemplo
+
+média >= 7.0 ? "Aprovado" : "Reprovado" 
